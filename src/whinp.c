@@ -176,7 +176,6 @@ keytimerstuff(void)
      if (followmode == 1) {
           goto skip;
      }
-     { extern int misterjoydpadstrafekey; misterjoydpadstrafekey = (unsigned char)keys[KEYSTRAFE]; }   // MiSTer: d-pad left/right strafe (patch_dpadstrafe_game.py)
      if (keystatus[keys[KEYSTRAFE]] == 0 && keystatus[keys[KEYSTRAFE]+0x80] == 0) {
           if (keystatus[keys[KEYLEFT]] > 0 || keystatus[RLEFT] > 0) {
                angvel -= 16;
