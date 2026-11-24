@@ -176,7 +176,7 @@ s = re.sub(r'''void\ninitjstick\(void\)\n\{\n.*?\n\}\n''', '''void
 initjstick(void)
 {
      // MiSTer: the core's eight buttons, R B A L Y X Select Start
-     static const int misterjoykeys[NUMJOYKEYS] = {KEYFIRE, KEYUSE, KEYJUMP, KEYRUN, KEYCAST, KEYUSEP, KEYMAP, -1};
+     static const int misterjoykeys[NUMJOYKEYS] = {KEYFIRE, KEYJUMP, KEYUSE, KEYRUN, KEYCAST, KEYUSEP, KEYMAP, -1};
      int i;
      jcalibration = 0;
      jstickenabled = 1;
